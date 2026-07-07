@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Naik — Portfolio</title>
+  <link rel="stylesheet" href="port.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-first">Ganesh</span><span class="logo-last"> Naik</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <!-- 📝 TO EDIT: Replace # below with your actual GitHub, LinkedIn, Instagram URLs -->
+      <a href="#" target="_blank" class="nav-icon"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ganesh-naik-96a61a384?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="nav-icon"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>👋 Hello, I'm</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-first">Ganesh</span> <span class="name-last">Naik</span>
+      </h1>
+      <div class="hero-subtitle">
+        I'm a <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        I build creative web applications and solve real-world problems<br />
+        through clean code and logical thinking.
+      </p>
+      <div class="hero-buttons">
+
+       
+        <!--<a href="#" class="btn btn-primary" download>
+          <i class="fas fa-file-alt"></i> Download Resume
+        </a>-->
+
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+      <div class="hero-socials">
+        <!-- 📝 TO EDIT: Replace # with your actual profile links -->
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ganesh-naik-96a61a384?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="orbit-ring"></div>
+      <div class="orbit-dot"></div>
+      <!-- 📝 TO EDIT: Save your photo as "profile.jpg" in the same folder -->
+      <img src="img2.png" alt="Ganesh Naik" class="profile-img" />
+    </div>
+  </section>
+
+  <!-- ========== ABOUT STRIP ========== -->
+  <section class="about-strip" id="about">
+    <div class="strip-card about-card">
+      <div class="card-header">
+        <i class="fas fa-user"></i>
+        <h3>About Me</h3>
+      </div>
+      <p>
+        I'm a passionate Web Developer and C Programmer, currently pursuing
+        my B.Tech at REVA University, Bangalore. I love building projects
+        that solve real problems.
+      </p>
+      <a href="#about-full" class="read-more">Read More →</a>
+    </div>
+
+    <div class="strip-card stats-card">
+      <div class="stat-item">
+        <i class="fas fa-graduation-cap"></i>
+        <span class="stat-num" data-target="2">0</span>nd
+        <p>Semester</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-star"></i>
+        <span class="stat-num" data-target="97">0</span>
+        <p>1st Sem SGPA (×10)</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-code"></i>
+        <span class="stat-num" data-target="3">0</span>+
+        <p>Projects Built</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-layer-group"></i>
+        <span class="stat-num" data-target="3">0</span>+
+        <p>Technologies</p>
+      </div>
+    </div>
+
+    <div class="strip-card skills-preview-card">
+      <div class="card-header">
+        <i class="fas fa-code"></i>
+        <h3>Skills</h3>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-icon html">H5</span> HTML</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-icon css">C3</span> CSS</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-icon js">JS</span> JavaScript</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">50%</span>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-icon python">Py</span> Python</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-pct">60%</span>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-icon c">C</span> C Language</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-icon git">G</span> Git</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FULL ABOUT ========== -->
+  <section class="section" id="about-full">
+    <div class="section-header">
+      <span class="section-eyebrow">Who Am I</span>
+      <h2>About <span class="accent">Me</span></h2>
+    </div>
+    <div class="about-full-grid">
+      <div class="about-text">
+        <p>
+          Hi! I'm <strong>Ganesh Naik</strong>, a curious and driven tech enthusiast currently
+          pursuing my <strong>B.Tech at REVA University, Bangalore</strong>. I'm in my
+          2nd semester and already building real-world projects that showcase my passion for
+          development.
+        </p>
+        <p>
+          I work with <strong>Python, HTML, CSS, JavaScript, and C Programming</strong>.
+          I enjoy creating things from scratch — whether it's a web app, a clone, or a
+          logic-heavy C program. My 1st semester SGPA of <strong>9.7</strong> reflects
+          my dedication to both academics and hands-on learning.
+        </p>
+        <p>
+          When I'm not coding, I'm exploring new tech, working on side projects, or
+          levelling up my problem-solving skills.
+        </p>
+        <div class="about-details">
+          <div class="detail-item"><span>Name:</span> Ganesh Naik</div>
+          <!-- 📝 TO EDIT: Add your email -->
+          <div class="detail-item"><span>Email:</span> ganinaik03b@email.com</div>
+          <!-- 📝 TO EDIT: Add your phone -->
+          <div class="detail-item"><span>Phone:</span> +91 7676224075</div>
+          <div class="detail-item"><span>Location:</span> Bangalore, India</div>
+          <div class="detail-item"><span>Degree:</span> B.Tech (ISE) — 2nd Sem</div>
+          <div class="detail-item"><span>University:</span> REVA University</div>
+          <div class="detail-item"><span>SGPA (Sem 1):</span> 9.7</div>
+          <div class="detail-item"><span>Availability:</span> Open to Internships</div>
+        </div>
+      </div>
+      <div class="about-image-wrap">
+        <!-- 📝 TO EDIT: Save your photo as "profile.jpg" in the same folder -->
+        <img src="ChatGPT Image Feb 22, 2026, 07_17_59 AM.png" alt="Ganesh Naik" class="about-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS FULL ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="section-header">
+      <span class="section-eyebrow">What I Know</span>
+      <h2>My <span class="accent">Skills</span></h2>
+    </div>
+    <div class="skills-full-grid">
+      <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+      <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</div>
+      <div class="skill-tag"><i class="fas fa-terminal"></i> C Programming</div>
+      <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+      <div class="skill-tag"><i class="fab fa-github"></i> GitHub</div>
+      <div class="skill-tag"><i class="fas fa-brain"></i> Problem Solving</div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="section-header">
+      <span class="section-eyebrow">What I've Built</span>
+      <h2>My <span class="accent">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="project1.jpg" alt="To Do App" class="project-img" onerror="this.style.display='none'" />
+          <div class="project-img-fallback"><i class="fas fa-tasks"></i></div>
+        </div>
+        <div class="project-body">
+          <h3>To-Do App</h3>
+          <p>A clean task management app to add, complete, and delete daily tasks — built with vanilla JS and local storage.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+        
+            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="project2.jpg" alt="Snowpaper Sizer" class="project-img" onerror="this.style.display='none'" />
+          <div class="project-img-fallback"><i class="fas fa-snowflake"></i></div>
+        </div>
+        <div class="project-body">
+          <h3>Snow paper Sizer</h3>
+          <p>An interactive tool to visualize and resize snowpaper patterns with dynamic controls and real-time preview.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="project4.jpg" alt="Movie Intelligence Platform" class="project-img" onerror="this.style.display='none'" />
+          <div class="project-img-fallback"><i class="fas fa-film"></i></div>
+        </div>
+        <div class="project-body">
+          <h3>Movie Intelligence Platform</h3>
+          <p>A movie discovery and recommendation platform that lets users search, explore, and get smart movie suggestions using Python.</p>
+          <div class="project-tags">
+            <span>Python</span><span>HTML</span><span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="project5.jpg" alt="C Programming Project" class="project-img" onerror="this.style.display='none'" />
+          <div class="project-img-fallback"><i class="fas fa-terminal"></i></div>
+        </div>
+        <div class="project-body">
+          <h3>C Programming Project</h3>
+          <p>A console-based C application demonstrating core programming concepts — data structures, file handling, and algorithms.</p>
+          <div class="project-tags">
+            <span>C Language</span><span>Data Structures</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section section-alt" id="experience">
+    <div class="section-header">
+      <span class="section-eyebrow">My Journey</span>
+      <h2>My <span class="accent">Education</span></h2>
+    </div>
+    <div class="timeline-grid">
+
+      <!-- Currently Studying -->
+      <div class="timeline-col">
+        <h3 class="timeline-col-title"><i class="fas fa-graduation-cap"></i> University</h3>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 – Present</span>
+            <h4>B.Tech — Information Science &amp; Engineering</h4>
+            <p class="timeline-company">REVA University, Bangalore</p>
+            <p>Currently in 2nd Semester. Achieved SGPA of <strong>9.7</strong> in Semester 1. Focused on web development, programming, and building real-world projects.</p>
+          </div>
+        </div>
+
+        <!-- 📝 TO EDIT: Add internships or achievements here when you have them -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 – Ongoing</span>
+            <h4>Self-Learning &amp; Projects</h4>
+            <p class="timeline-company">Personal Development</p>
+            <p>Actively building projects using Python, JavaScript, HTML/CSS, and C to strengthen practical skills alongside academics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- School -->
+      <div class="timeline-col">
+        <h3 class="timeline-col-title"><i class="fas fa-school"></i> School</h3>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <!-- 📝 TO EDIT: Add your 12th school name -->
+            <span class="timeline-date">2022 – 2024</span>
+            <h4>Higher Secondary — 12th Grade</h4>
+            <p class="timeline-company">Siddarth PU college,Bhatkal</p>
+            <p>Science stream. Scored <strong>91%</strong>. Strong foundation in Mathematics and Computer Science.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <!-- 📝 TO EDIT: Add your 10th school name and marks -->
+            <span class="timeline-date">Before 2022</span>
+            <h4>Secondary School — 10th Grade</h4>
+            <p class="timeline-company">GHS Gorate</p>
+            <p>Completed 10th grade with strong academic performance.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section" id="certifications">
+    <div class="section-header">
+      <span class="section-eyebrow">Credentials</span>
+      <h2>My <span class="accent">Certifications</span></h2>
+    </div>
+    <div class="cert-grid">
+     
+      <div class="cert-card">
+        <i class="fab fa-python cert-icon"></i>
+        <h4>Python Programming</h4>
+        <img src="python c1.png">
+        <p>IBM • 2026</p>
+      </div>
+
+      <div class="cert-card">
+        <i class="fab fa-python cert-icon"></i>
+        <h4>Python Programming</h4>
+        <img src="python c2.png">
+        <p>IBM • 2026</p>
+      </div>
+
+      <div class="cert-card">
+        <i class="fab fa-python cert-icon"></i>
+        <h4>Python Programming</h4>
+        <img src="pyhton c3.png">
+        <p>IBM • 2026</p>
+      </div>
+      
+      
+      <!-- 📝 TO EDIT: Add more cert cards by copying the block above -->
+    </div>
+    <p style="text-align:center; color:var(--text-muted); margin-top:1.5rem; font-size:0.88rem;">
+      🔄 Certifications will be updated soon.
+    </p>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-alt" id="contact">
+    <div class="section-header">
+      <span class="section-eyebrow">Get in Touch</span>
+      <h2>Contact <span class="accent">Me</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span>Email</span>
+            <!-- 📝 TO EDIT: Replace with your email -->
+            <a href="mailto:your@email.com">ganinaik03b@email.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <span>Phone</span>
+            <!-- 📝 TO EDIT: Replace with your phone number -->
+            <a href="tel:+910000000000">+91 7676224075</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <span>Location</span>
+            <p>Bangalore, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-university"></i>
+          <div>
+            <span>University</span>
+            <p>REVA University</p>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <!-- 📝 TO EDIT: Replace # with your actual links -->
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ganesh-naik-96a61a384?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="formName" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="formEmail" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="formSubject" placeholder="Subject" />
+        </div>
+        <div class="form-group">
+          <textarea id="formMessage" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <span class="accent">Ganesh Naik</span></p>
+    <p class="footer-sub">© 2025 All Rights Reserved</p>
+  </footer>
+
+  <script src="port.js"></script>
+</body>
+</html>
